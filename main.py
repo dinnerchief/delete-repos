@@ -9,6 +9,6 @@ gh = Github(auth=auth)
 
 
 for repo in gh.get_user().get_repos():
-    if repo.full_name == "dinnerchief/dinnerchief":
+    if repo.full_name == "dinnerchief/dinnerchief": # here is your 'main' repo
         continue
     repo.delete()
